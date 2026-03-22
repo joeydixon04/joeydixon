@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graphic Design — Joey Dixon</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Joey Dixon</div>
+            <div class="mobile-menu-toggle"><span></span><span></span><span></span></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="graphic-design.html">Graphic Design</a></li>
+                <li><a href="web-design.html">Web Design</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="page-wrap">
+        <div class="col-left">
+            <span class="page-label">02 — Graphic Design</span>
+            <h2>Graphic Design.</h2>
+            <div class="rule"></div>
+            <p>I'm a graphic designer focused on creating bold, eye catching visuals that feel intentional and expressive. A lot of my work is inspired by music, media, and culture, and I like designing pieces that carry a strong sense of mood and identity.</p>
+            <p style="margin-top:1.25rem;">I approach each project with attention to detail, making sure the visuals not only stand out but also communicate clearly. My goal is to keep refining my style while building work that feels creative, polished, and true to what inspires me.</p>
+            <div class="rule"></div>
+
+            <div class="project-list">
+                <div class="project-row" onclick="openGallery('poster')">
+                    <div class="project-row-left">
+                        <span class="project-num">01</span>
+                        <div>
+                            <h3 class="project-title">Poster Design</h3>
+                            <p>Music, film, and culture-inspired poster work.</p>
+                        </div>
+                    </div>
+                    <span class="project-arrow">→</span>
+                </div>
+                <div class="project-row" onclick="openGallery('social')">
+                    <div class="project-row-left">
+                        <span class="project-num">02</span>
+                        <div>
+                            <h3 class="project-title">Kansas City Pioneers</h3>
+                            <p>Designed social media assets, website graphics, and brand content for the Kansas City Pioneers esports organization. Worked closely with the creative director adapting visuals across multiple platforms and aspect ratios.</p>
+                        </div>
+                    </div>
+                    <span class="project-arrow">→</span>
+                </div>
+            </div>
+
+            <a href="https://www.behance.net/jdcreates" target="_blank" class="btn" style="margin-top:3rem;">View on Behance</a>
+        </div>
+        <div class="col-right">
+            <div class="gallery-trigger" onclick="openGallery('poster')" title="Click to view poster gallery">
+                <div class="gallery-thumb"><img src="images/posters/poster1.jpg" alt=""></div>
+                <div class="gallery-thumb"><img src="images/posters/poster2.jpg" alt=""></div>
+                <div class="gallery-thumb"><img src="images/posters/poster3.jpg" alt=""></div>
+                <div class="gallery-thumb"><img src="images/posters/poster4.jpg" alt=""></div>
+                <div class="gallery-thumb"><img src="images/posters/poster5.jpg" alt=""></div>
+                <div class="gallery-thumb"><img src="images/posters/poster6.jpg" alt=""></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Gallery Popup -->
+    <div id="galleryModal" class="gallery-modal">
+        <div class="gallery-modal-content">
+            <span class="gallery-close" onclick="closeGallery()">&times;</span>
+            <p class="gallery-title" id="galleryTitle"></p>
+            <div id="galleryGrid" class="gallery-popup-grid"></div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-grid">
+            <div>
+                <span class="footer-label">Joey Dixon</span>
+                <p>Freelance Web Development Student &amp; Graphic Design.</p>
+            </div>
+            <div>
+                <span class="footer-label">Services</span>
+                <ul>
+                    <li><a href="graphic-design.html">Graphic design</a></li>
+                    <li><a href="web-design.html">Web design</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </div>
+            <div>
+                <span class="footer-label">Contact</span>
+                <ul>
+                    <li><a href="mailto:joeydixonbusiness@gmail.com">joeydixonbusiness@gmail.com</a></li>
+                    <li><a href="contact.html">Contact form</a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="footer-copy">&copy; 2026 Joey Dixon. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
