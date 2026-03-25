@@ -8,89 +8,137 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">Joey Dixon</div>
-            <div class="mobile-menu-toggle"><span></span><span></span><span></span></div>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="graphic-design.html">Graphic Design</a></li>
-                <li><a href="web-design.html">Web Design</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <div class="page-wrap">
-        <div class="col-left">
-            <span class="page-label">Joey Dixon — 2026</span>
-            <h1>Design.<br>Develop.<br>Deliver.</h1>
-            <div class="rule"></div>
-            <p>Graphic Design &amp; Web Development Services</p>
-            <a href="contact.html" class="btn" style="margin-top:2rem;">Start your project</a>
-        </div>
-        <div class="col-right">
-            <div class="home-services">
-                <a href="about.html" class="home-service-item">
-                    <div class="home-service-num">01</div>
-                    <div class="home-service-body">
-                        <h3>About</h3>
-                        <p>Student designer and developer based in Kansas City.</p>
-                    </div>
-                    <div class="home-service-arrow">&#8594;</div>
-                </a>
-                <a href="graphic-design.html" class="home-service-item">
-                    <div class="home-service-num">02</div>
-                    <div class="home-service-body">
-                        <h3>Graphic Design</h3>
-                        <p>Bold, eye-catching visuals inspired by music, media, and culture.</p>
-                    </div>
-                    <div class="home-service-arrow">&#8594;</div>
-                </a>
-                <a href="web-design.html" class="home-service-item">
-                    <div class="home-service-num">03</div>
-                    <div class="home-service-body">
-                        <h3>Web Design</h3>
-                        <p>Responsive, hand-coded websites built with precision and care.</p>
-                    </div>
-                    <div class="home-service-arrow">&#8594;</div>
-                </a>
-                <a href="contact.html" class="home-service-item">
-                    <div class="home-service-num">04</div>
-                    <div class="home-service-body">
-                        <h3>Work Together</h3>
-                        <p>Get in touch and let's build something good.</p>
-                    </div>
-                    <div class="home-service-arrow">&#8594;</div>
-                </a>
-            </div>
-        </div>
+<div class="progress-bar" id="progressBar"></div>
+
+<header>
+    <nav class="nav-inner">
+        <a href="index.html" class="logo">Joey Dixon</a>
+        <div class="mobile-menu-toggle"><span></span><span></span><span></span></div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="graphic-design.html">Graphic Design</a></li>
+            <li><a href="web-design.html">Web Design</a></li>
+            <li><a href="contact.html" class="nav-cta">Get In Touch</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- HERO -->
+<section class="page-hero">
+    <div class="page-hero__index">00</div>
+    <div class="page-hero__heading">
+        <h1><em>Design.</em><br>Develop.<br>Deliver.</h1>
     </div>
+    <div class="page-hero__meta">
+        <p>Graphic designer &amp; web developer from Kansas City. </p>
+        <br>
+        <a href="contact.html" class="btn"><span class="btn-label">Start a project</span></a>
+    </div>
+</section>
 
-    <footer>
-        <div class="footer-grid">
-            <div>
-                <span class="footer-label">Joey Dixon</span>
-                <p>Freelance Web Development Student &amp; Graphic Design.</p>
-            </div>
-            <div>
-                <span class="footer-label">Services</span>
-                <ul>
-                    <li><a href="graphic-design.html">Graphic Design</a></li>
-                    <li><a href="web-design.html">Web Design</a></li>
-                    <li><a href="about.html">About</a></li>
-                </ul>
-            </div>
-            <div>
-                <span class="footer-label">Contact</span>
-                <ul>
-                    <li><a href="contact.html">Get In Touch</a></li>
-                </ul>
-            </div>
+<!-- MARQUEE -->
+<div class="marquee-band">
+    <div class="marquee-inner">
+        <span>Graphic Design</span><span class="dot">—</span>
+        <span>Web Development</span><span class="dot">—</span>
+        <span>Kansas City</span><span class="dot">—</span>
+        <span>Graphic Design</span><span class="dot">—</span>
+        <span>Web Development</span><span class="dot">—</span>
+        <span>Kansas City</span><span class="dot">—</span>
+        <span>Graphic Design</span><span class="dot">—</span>
+        <span>Web Development</span><span class="dot">—</span>
+        <span>Kansas City</span><span class="dot">—</span>
+        <span>Graphic Design</span><span class="dot">—</span>
+        <span>Web Development</span><span class="dot">—</span>
+        <span>Kansas City</span><span class="dot">—</span>
+    </div>
+</div>
+
+<!-- INDEX -->
+<nav class="home-index">
+    <a href="about.html" class="home-index__item">
+        <span class="home-index__num">01</span>
+        <span class="home-index__title">About</span>
+        <span class="home-index__desc">Graphic Designer & Web Development Student Based In Kansas City</span>
+        <span class="home-index__arrow">&#8594;</span>
+    </a>
+    <a href="graphic-design.html" class="home-index__item">
+        <span class="home-index__num">02</span>
+        <span class="home-index__title">Graphic Design</span>
+        <span class="home-index__desc">Self Taught Graphic Designer proficient in Adobe Creative Suite</span>
+        <span class="home-index__arrow">&#8594;</span>
+    </a>
+    <a href="web-design.html" class="home-index__item">
+        <span class="home-index__num">03</span>
+        <span class="home-index__title">Web Design</span>
+        <span class="home-index__desc">Functional, Aesthetic Web Pages</span>
+        <span class="home-index__arrow">&#8594;</span>
+    </a>
+    <a href="contact.html" class="home-index__item">
+        <span class="home-index__num">04</span>
+        <span class="home-index__title">Get In Touch</span>
+        <span class="home-index__desc">Interested In Working With Me? Fill Out My Free Contact Form To Get Started</span>
+        <span class="home-index__arrow">&#8594;</span>
+    </a>
+</nav>
+
+<!-- ABOUT BLURB -->
+<div class="content-section">
+    <div class="content-section__label">Who I Am</div>
+    <div class="content-section__body">
+        <p>I'm a graphic designer and web developer based in Kansas City. I combine my background in graphic design with the technical side of development to create sites that are both visually intentional and build with quality.</p>
+        <p>Strong attention to detail, a clear eye for what separates good design from bad, and experience working alongside other creatives.</p>
+    </div>
+    <div class="content-section__aside">
+        <div class="contact-detail">
+            <span class="contact-detail__label">Location</span>
+            <span class="contact-detail__value">Kansas City</span>
         </div>
-        <p class="footer-copy">&copy; 2026 Joey Dixon. All rights reserved.</p>
-    </footer>
-    <script src="script.js"></script>
+        <div class="contact-detail">
+            <span class="contact-detail__label">Status</span>
+            <span class="contact-detail__value">Available For Work</span>
+        </div>
+        <div class="contact-detail">
+            <span class="contact-detail__label">Education</span>
+            <span class="contact-detail__value">AAS Web Development — JCCC, 2026</span>
+        </div>
+        <a href="about.html" class="btn" style="margin-top:1.5rem;"><span class="btn-label">Full bio</span></a>
+    </div>
+</div>
+
+<footer>
+    <div class="footer-brand">
+        <span class="footer-brand-name">Joey Dixon</span>
+        <p>Freelance web development student &amp; graphic designer based in Kansas City.</p>
+    </div>
+    <div class="footer-col">
+        <span class="footer-col-label">Services</span>
+        <ul>
+            <li><a href="graphic-design.html">Graphic Design</a></li>
+            <li><a href="web-design.html">Web Design</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </div>
+    <div class="footer-col">
+        <span class="footer-col-label">Contact</span>
+        <ul>
+            <li><a href="contact.html">Get In Touch</a></li>
+        </ul>
+    </div>
+    <div class="footer-col">
+        <span class="footer-col-label">Work</span>
+        <ul>
+            <li><a href="https://www.behance.net/jdcreates" target="_blank">Behance</a></li>
+        </ul>
+    </div>
+    <div class="footer-bottom">
+        <span class="footer-copy">&copy; 2026 Joey Dixon. All rights reserved.</span>
+        <span class="footer-loc">Kansas City</span>
+    </div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>

@@ -8,92 +8,157 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">Joey Dixon</div>
-            <div class="mobile-menu-toggle"><span></span><span></span><span></span></div>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="graphic-design.html">Graphic Design</a></li>
-                <li><a href="web-design.html">Web Design</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <div class="page-wrap">
-        <div class="col-left">
-            <span class="page-label">01 — About</span>
-            <h2>About Me.</h2>
-            <div class="rule"></div>
-            <p>I'm a graphic designer and web developer based in Shawnee, KS. I combine my skills in graphic design with the technical side of web development to create visually stunning websites that are also functional.</p>
-            <p style="margin-top:1.25rem;">I have a strong attention to detail, know what to look for in both good and bad design, and have experience working in collaborative environments with other creatives.</p>
-            <div class="rule"></div>
-            <h3>Skills</h3>
-            <p><strong style="font-weight:500;color:var(--white);">Web Development</strong><br>HTML — CSS — JavaScript — Figma — Github</p>
-            <p style="margin-top:1rem;"><strong style="font-weight:500;color:var(--white);">Graphic Design</strong><br>Photoshop — Typography — Layout — Branding</p>
-            <div class="rule"></div>
-            <a href="contact.html" class="btn">Work with me</a>
+<div class="progress-bar" id="progressBar"></div>
+
+<header>
+    <nav class="nav-inner">
+        <a href="index.html" class="logo">Joey Dixon</a>
+        <div class="mobile-menu-toggle"><span></span><span></span><span></span></div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="graphic-design.html">Graphic Design</a></li>
+            <li><a href="web-design.html">Web Design</a></li>
+            <li><a href="contact.html" class="nav-cta">Get In Touch</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- HERO -->
+<section class="page-hero">
+    <div class="page-hero__index">01</div>
+    <div class="page-hero__heading">
+        <h2><em>About</em><br>Me.</h2>
+    </div>
+    <div class="page-hero__meta">
+        <p>Graphic designer &amp; web developer from Kansas City.</p>
+    </div>
+</section>
+
+<!-- BIO -->
+<div class="content-section">
+    <div class="content-section__label">Background</div>
+    <div class="content-section__body">
+        <p>I'm a graphic designer and web developer based in Kansas City. I combine a background in graphic design with the technical side of web development to create visually stunning websites that are also functional.</p>
+        <p>I have a strong attention to detail, know what to look for in both good and bad design, and have experience working in collaborative environments with other creatives.</p>
+    </div>
+    <div class="content-section__aside">
+        <div class="contact-detail">
+            <span class="contact-detail__label">Location</span>
+            <span class="contact-detail__value">Kansas City</span>
         </div>
-        <div class="col-right">
-            <span class="page-label">Qualifications</span>
-            <div class="rule"></div>
-            <ul class="qual-list">
-                <li class="qual-item">
-                    <div class="qual-meta">
-                        <span class="qual-year">2025 — Present</span>
-                    </div>
-                    <div class="qual-body">
-                        <h3><a href="https://www.jccc.edu/academics/credit/web-development-digital-media/web-dev-digital-media-aas.html" target="_blank" style="color:var(--white);text-decoration:none;border-bottom:1px solid rgba(241,241,241,0.3);padding-bottom:1px;">AAS Web Development</a></h3>
-                        <p>Johnson County Community College — Overland Park, KS. Associates of Applied Science in Web Development, expected December 2026.</p>
-                    </div>
-                </li>
-                <li class="qual-item">
-                    <div class="qual-meta">
-                        <span class="qual-year">2021 — 2022</span>
-                    </div>
-                    <div class="qual-body">
-                        <h3>Graphic Designer</h3>
-                        <p>Kansas City Pioneers — Kansas City, MO. Utilized Adobe software to design assets for the brand's social media, website, and more. Worked closely with the creative director and other creatives to deliver high quality work across multiple platforms and aspect ratios.</p>
-                    </div>
-                </li>
-                <li class="qual-item">
-                    <div class="qual-meta">
-                        <span class="qual-year">2020 — Present</span>
-                    </div>
-                    <div class="qual-body">
-                        <h3>Graphic Design</h3>
-                        <p>Self-taught graphic designer with experience in poster design, social media content, and brand visuals. Proficient in Adobe Photoshop and the Adobe Creative Suite.</p>
-                    </div>
-                </li>
-            </ul>
+        <div class="contact-detail">
+            <span class="contact-detail__label">Availability</span>
+            <span class="contact-detail__value">Open to freelance projects</span>
+        </div>
+        <a href="contact.html" class="btn" style="margin-top:1.5rem;"><span class="btn-label">Work with me</span></a>
+    </div>
+</div>
+
+<!-- SKILLS -->
+<div class="section-rule">
+    <span class="section-rule__label">Skills</span>
+    <span class="section-rule__title">Capabilities</span>
+</div>
+
+<div class="skills-grid">
+    <div class="skills-grid__col">
+        <span class="skills-grid__heading">Web Development</span>
+        <ul class="skills-grid__list">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Github</li>
+        </ul>
+    </div>
+    <div class="skills-grid__col">
+        <span class="skills-grid__heading">Graphic Design</span>
+        <ul class="skills-grid__list">
+            <li>Adobe Photoshop</li>
+            <li>Typography</li>
+            <li>Layout Design</li>
+            <li>Branding</li>
+            <li>Poster Design</li>
+        </ul>
+    </div>
+    <div class="skills-grid__col">
+        <span class="skills-grid__heading">Approach</span>
+        <ul class="skills-grid__list">
+            <li>Attention to Detail</li>
+            <li>Collaborative Work</li>
+            <li>Cross-Platform Design</li>
+            <li>Visual Identity</li>
+        </ul>
+    </div>
+</div>
+
+<!-- QUALIFICATIONS -->
+<div class="section-rule">
+    <span class="section-rule__label">Experience</span>
+    <span class="section-rule__title">Qualifications</span>
+</div>
+
+<div class="qual-section">
+    <div class="qual-section__label">Timeline</div>
+    <div class="qual-section__items">
+        <div class="qual-item">
+            <span class="qual-year">2025 — Present</span>
+            <div>
+                <div class="qual-title">
+                    <a href="https://www.jccc.edu/academics/credit/web-development-digital-media/web-dev-digital-media-aas.html" target="_blank">AAS Web Development</a>
+                </div>
+                <p class="qual-desc">Johnson County Community College — Overland Park, KS. Associates of Applied Science in Web Development, expected December 2026.</p>
+            </div>
+        </div>
+        <div class="qual-item">
+            <span class="qual-year">2021 — 2022</span>
+            <div>
+                <div class="qual-title">Graphic Designer</div>
+                <p class="qual-desc">Kansas City Pioneers — Kansas City, MO. Designed assets for social media, the website, and brand content. Worked closely with the creative director and other creatives to deliver high quality work across multiple platforms and aspect ratios.</p>
+            </div>
+        </div>
+        <div class="qual-item">
+            <span class="qual-year">2020 — Present</span>
+            <div>
+                <div class="qual-title">Graphic Design</div>
+                <p class="qual-desc">Self-taught graphic designer with experience in poster design, social media content, and brand visuals. Proficient in Adobe Photoshop and the Adobe Creative Suite.</p>
+            </div>
         </div>
     </div>
+</div>
 
-    <footer>
-        <div class="footer-grid">
-            <div>
-                <span class="footer-label">Joey Dixon</span>
-                <p>Freelance Web Development Student &amp; Graphic Design.</p>
-            </div>
-            <div>
-                <span class="footer-label">Services</span>
-                <ul>
-                    <li><a href="graphic-design.html">Graphic Design</a></li>
-                    <li><a href="web-design.html">Web Design</a></li>
-                    <li><a href="about.html">About</a></li>
-                </ul>
-            </div>
-            <div>
-                <span class="footer-label">Contact</span>
-                <ul>
-                    <li><a href="contact.html">Get In Touch</a></li>
-                </ul>
-            </div>
-        </div>
-        <p class="footer-copy">&copy; 2026 Joey Dixon. All rights reserved.</p>
-    </footer>
-    <script src="script.js"></script>
+<footer>
+    <div class="footer-brand">
+        <span class="footer-brand-name">Joey Dixon</span>
+        <p>Freelance web development student &amp; graphic designer based in Kansas City.</p>
+    </div>
+    <div class="footer-col">
+        <span class="footer-col-label">Services</span>
+        <ul>
+            <li><a href="graphic-design.html">Graphic Design</a></li>
+            <li><a href="web-design.html">Web Design</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </div>
+    <div class="footer-col">
+        <span class="footer-col-label">Contact</span>
+        <ul>
+            <li><a href="contact.html">Get In Touch</a></li>
+        </ul>
+    </div>
+    <div class="footer-col">
+        <span class="footer-col-label">Work</span>
+        <ul>
+            <li><a href="https://www.behance.net/jdcreates" target="_blank">Behance</a></li>
+        </ul>
+    </div>
+    <div class="footer-bottom">
+        <span class="footer-copy">&copy; 2026 Joey Dixon. All rights reserved.</span>
+        <span class="footer-loc">Kansas City</span>
+    </div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>

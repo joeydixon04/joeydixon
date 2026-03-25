@@ -8,95 +8,137 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">Joey Dixon</div>
-            <div class="mobile-menu-toggle"><span></span><span></span><span></span></div>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="graphic-design.html">Graphic Design</a></li>
-                <li><a href="web-design.html">Web Design</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <div class="page-wrap">
-        <div class="col-left">
-            <span class="page-label">03 — Web Design</span>
-            <h2>Web Design.</h2>
-            <div class="rule"></div>
-            <p>I build responsive, accessible websites that combine aesthetic excellence with technical performance. Every site is crafted with precision and care, from structure to the smallest visual detail.</p>
-            <div class="rule"></div>
-            <h3>Pricing</h3>
-            <p>$800 — $1,500 per website, depending on scope and complexity.</p>
-            <a href="contact.html" class="btn">Start your project</a>
+<div class="progress-bar" id="progressBar"></div>
+
+<header>
+    <nav class="nav-inner">
+        <a href="index.html" class="logo">Joey Dixon</a>
+        <div class="mobile-menu-toggle"><span></span><span></span><span></span></div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="graphic-design.html">Graphic Design</a></li>
+            <li><a href="web-design.html">Web Design</a></li>
+            <li><a href="contact.html" class="nav-cta">Get In Touch</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- HERO -->
+<section class="page-hero">
+    <div class="page-hero__index">03</div>
+    <div class="page-hero__heading">
+        <h2><em>Web</em><br>Design.</h2>
+    </div>
+    <div class="page-hero__meta">
+        <p>Aesthetic, functional web pages built to make your brand stand out</p>
+    </div>
+</section>
+
+<!-- INTRO -->
+<div class="content-section">
+    <div class="content-section__label">Approach</div>
+    <div class="content-section__body">
+        <p>I build responsive, accessible websites that combine aesthetic excellence with technical performance. Every site is crafted with precision and care, from structure to the smallest visual detail.</p>
+    </div>
+    <div class="content-section__aside">
+        <div class="contact-detail">
+            <span class="contact-detail__label">Languages</span>
+            <span class="contact-detail__value">HTML — CSS — JavaScript</span>
         </div>
-        <div class="col-right">
-            <ul class="services-list">
-                <li>
-                    <span class="num">01</span>
-                    <div>
-                        <h3>Custom Websites</h3>
-                        <p>Fully responsive, hand-coded websites built with modern web standards and best practices for optimal performance.</p>
-                    </div>
-                </li>
-                <li>
-                    <span class="num">02</span>
-                    <div>
-                        <h3>E-Commerce</h3>
-                        <p>Online stores that are intuitive to use and easy to manage, with seamless checkout experiences.</p>
-                    </div>
-                </li>
-                <li>
-                    <span class="num">03</span>
-                    <div>
-                        <h3>UI/UX Design</h3>
-                        <p>User-centered design that prioritizes clarity, accessibility, and delightful interactions across all devices.</p>
-                    </div>
-                </li>
-                <li>
-                    <span class="num">04</span>
-                    <div>
-                        <h3>HTML &amp; CSS</h3>
-                        <p>Structured, semantic markup and clean stylesheets built for maintainability and speed.</p>
-                    </div>
-                </li>
-                <li>
-                    <span class="num">05</span>
-                    <div>
-                        <h3>JavaScript</h3>
-                        <p>Interactive, dynamic experiences built with vanilla JS and modern best practices.</p>
-                    </div>
-                </li>
-            </ul>
+        <div class="contact-detail">
+            <span class="contact-detail__label">Tools</span>
+            <span class="contact-detail__value">Github — VS Code</span>
         </div>
     </div>
+</div>
 
-    <footer>
-        <div class="footer-grid">
+<!-- SERVICES -->
+<div class="section-rule">
+    <span class="section-rule__label">What I Do</span>
+    <span class="section-rule__title">Skills</span>
+</div>
+
+<div class="services-section">
+    <div class="services-section__label">Web Design</div>
+    <div class="services-section__items">
+        <div class="service-item">
+            <span class="service-num">01</span>
             <div>
-                <span class="footer-label">Joey Dixon</span>
-                <p>Freelance Web Development Student &amp; Graphic Design.</p>
+                <div class="service-name">Custom Websites</div>
+                <p class="service-desc">Aesthetic, functional web pages built to make your brand stand out</p>
             </div>
-            <div>
-                <span class="footer-label">Services</span>
-                <ul>
-                    <li><a href="graphic-design.html">Graphic Design</a></li>
-                    <li><a href="web-design.html">Web Design</a></li>
-                    <li><a href="about.html">About</a></li>
-                </ul>
-            </div>
-            <div>
-                <span class="footer-label">Contact</span>
-                <ul>
-                    <li><a href="contact.html">Get In Touch</a></li>
-                </ul>
-            </div>
+            <span class="service-tag">Core</span>
         </div>
-        <p class="footer-copy">&copy; 2026 Joey Dixon. All rights reserved.</p>
-    </footer>
-    <script src="script.js"></script>
+        <div class="service-item">
+            <span class="service-num">02</span>
+            <div>
+                <div class="service-name">UI/UX Design</div>
+                <p class="service-desc">User-centered design that prioritizes clarity, accessibility, and responsive interactions across all devices.</p>
+            </div>
+            <span class="service-tag">Design</span>
+        </div>
+        <div class="service-item">
+            <span class="service-num">03</span>
+            <div>
+                <div class="service-name">HTML &amp; CSS</div>
+                <p class="service-desc">Structured, semantic markup and clean stylesheets built for maintainability and speed.</p>
+            </div>
+            <span class="service-tag">Dev</span>
+        </div>
+        <div class="service-item">
+            <span class="service-num">04</span>
+            <div>
+                <div class="service-name">JavaScript</div>
+                <p class="service-desc">Interactive, dynamic experiences built with vanilla JS and modern best practices.</p>
+            </div>
+            <span class="service-tag">Dev</span>
+        </div>
+    </div>
+</div>
+
+<!-- PRICING -->
+<div class="pricing-band">
+    <div class="pricing-band__label">Your Investment</div>
+    <div class="pricing-band__price">$800 <span>—</span> $1,500</div>
+    <div class="pricing-band__note">Price varies based on complexity, number of pages, and more. Get in touch with me to get an estimated quote.</div>
+    <div class="pricing-band__cta">
+        <a href="contact.html" class="btn btn--white"><span class="btn-label">Start a project</span></a>
+    </div>
+</div>
+
+<footer>
+    <div class="footer-brand">
+        <span class="footer-brand-name">Joey Dixon</span>
+        <p>Freelance web development student &amp; graphic designer based in Kansas City.</p>
+    </div>
+    <div class="footer-col">
+        <span class="footer-col-label">Services</span>
+        <ul>
+            <li><a href="graphic-design.html">Graphic Design</a></li>
+            <li><a href="web-design.html">Web Design</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </div>
+    <div class="footer-col">
+        <span class="footer-col-label">Contact</span>
+        <ul>
+            <li><a href="contact.html">Get In Touch</a></li>
+        </ul>
+    </div>
+    <div class="footer-col">
+        <span class="footer-col-label">Work</span>
+        <ul>
+            <li><a href="https://www.behance.net/jdcreates" target="_blank">Behance</a></li>
+        </ul>
+    </div>
+    <div class="footer-bottom">
+        <span class="footer-copy">&copy; 2026 Joey Dixon. All rights reserved.</span>
+        <span class="footer-loc">Kansas City</span>
+    </div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
