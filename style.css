@@ -140,7 +140,7 @@ header {
 .page-hero__heading h1,
 .page-hero__heading h2 {
     font-size: clamp(3.5rem, 8vw, 9rem);
-    font-weight: 700;
+    font-weight: 800;
     line-height: 0.9;
     letter-spacing: -0.04em;
     text-transform: uppercase;
@@ -282,6 +282,7 @@ header {
 .section-rule__title {
     grid-column: 3 / 7;
     font-size: 0.55rem;
+    font-weight: 700;
     letter-spacing: 0.25em;
     text-transform: uppercase;
     color: var(--black);
