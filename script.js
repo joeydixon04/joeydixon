@@ -53,6 +53,71 @@ function pageTransitions() {
     });
 }
 
+// ====== IMAGE PROTECTION (DETERRENTS) ======
+function initImageProtection() {
+    const isEditableTarget = (target) => (
+        target &&
+        (target.tagName === 'INPUT' || target.tagName === 'TEXTAREA' || target.isContentEditable)
+    );
+
+    const protectImage = (img) => {
+        if (!(img instanceof HTMLImageElement)) return;
+        img.setAttribute('draggable', 'false');
+        img.setAttribute('data-protected-image', 'true');
+        img.addEventListener('dragstart', (e) => e.preventDefault());
+        img.addEventListener('contextmenu', (e) => e.preventDefault());
+    };
+
+    const protectWithin = (root) => {
+        if (!root) return;
+        if (root instanceof HTMLImageElement) {
+            protectImage(root);
+            return;
+        }
+        if (root.querySelectorAll) {
+            root.querySelectorAll('img').forEach(protectImage);
+        }
+    };
+
+    protectWithin(document);
+
+    const observer = new MutationObserver((mutations) => {
+        mutations.forEach((mutation) => {
+            mutation.addedNodes.forEach((node) => {
+                if (node.nodeType === Node.ELEMENT_NODE) protectWithin(node);
+            });
+        });
+    });
+    observer.observe(document.body, { childList: true, subtree: true });
+
+    document.addEventListener('contextmenu', (e) => {
+        const target = e.target;
+        if (target instanceof Element && target.closest('img, .gallery-thumb, .gallery-popup-item, #lightbox')) {
+            e.preventDefault();
+        }
+    });
+
+    document.addEventListener('dragstart', (e) => {
+        const target = e.target;
+        if (target instanceof Element && target.closest('img')) e.preventDefault();
+    });
+
+    document.addEventListener('keydown', (e) => {
+        if (isEditableTarget(e.target)) return;
+        const key = e.key.toLowerCase();
+        const ctrlOrCmd = e.ctrlKey || e.metaKey;
+
+        // Block common "save/view source/devtools" shortcuts.
+        if (
+            (ctrlOrCmd && key === 's') ||
+            (ctrlOrCmd && key === 'u') ||
+            (ctrlOrCmd && e.shiftKey && (key === 'i' || key === 'j' || key === 'c'))
+        ) {
+            e.preventDefault();
+        }
+    });
+}
+
 // ====== GALLERY DATA ======
 const galleries = {
     poster: {
@@ -197,4 +262,5 @@ document.addEventListener('DOMContentLoaded', () => {
     initMobileMenu();
     initProgressBar();
     pageTransitions();
+    initImageProtection();
 });
