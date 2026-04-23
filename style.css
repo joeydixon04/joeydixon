@@ -280,11 +280,13 @@ header {
     grid-column: 3 / 7;
 }
 
-.about-portrait {
+.about-portrait,
+.content-section--about figure {
     grid-column: 7 / 10;
     align-self: start;
     justify-self: end;
     width: min(100%, 22rem);
+    max-width: 22rem;
     margin: 0;
     aspect-ratio: 4 / 5;
     border: 1px solid var(--rule);
@@ -292,7 +294,8 @@ header {
     overflow: hidden;
 }
 
-.about-portrait img {
+.about-portrait img,
+.content-section--about figure img {
     width: 100%;
     height: 100%;
     display: block;
@@ -1007,8 +1010,14 @@ footer {
     .content-section__aside { grid-column: 9 / 13; }
     .content-section--about .content-section__body { grid-column: 3 / 8; }
     .content-section--about .about-portrait,
+    .content-section--about figure,
     .content-section--about .content-section__aside { grid-column: 8 / 13; }
-    .content-section--about .about-portrait { justify-self: start; width: min(100%, 24rem); }
+    .content-section--about .about-portrait,
+    .content-section--about figure {
+        justify-self: start;
+        width: min(100%, 24rem);
+        max-width: 24rem;
+    }
     .content-section--about .content-section__aside { margin-top: var(--g); }
 
     .gallery-trigger { grid-template-columns: repeat(4, 1fr); }
@@ -1103,17 +1112,20 @@ footer {
     .content-section__aside { grid-column: 1 / -1; }
     .content-section__aside { border-left: none; border-top: 1px solid var(--rule); padding-left: 0; padding-top: var(--g); }
     .content-section--about { row-gap: calc(var(--g) * 0.75); }
-    .content-section--about .about-portrait {
+    .content-section--about .about-portrait,
+    .content-section--about figure {
         grid-column: 1 / -1;
         order: 1;
         justify-self: stretch;
         width: 100%;
+        max-width: none;
         margin: calc(var(--g) * 0.45) calc(var(--g) * -0.25) var(--g);
         aspect-ratio: 1 / 1.08;
         border-left: none;
         border-right: none;
     }
-    .content-section--about .about-portrait img { object-position: 50% 22%; }
+    .content-section--about .about-portrait img,
+    .content-section--about figure img { object-position: 50% 22%; }
     .content-section--about .content-section__body { order: 2; }
     .content-section--about .content-section__aside { order: 3; margin-top: 0; }
 
@@ -1230,12 +1242,14 @@ footer {
     .service-desc,
     .project-info__desc { font-size: 0.78rem; line-height: 1.65; }
 
-    .content-section--about .about-portrait {
+    .content-section--about .about-portrait,
+    .content-section--about figure {
         margin-left: calc(var(--g) * -0.25);
         margin-right: calc(var(--g) * -0.25);
         aspect-ratio: 1 / 1.14;
     }
-    .content-section--about .about-portrait img { object-position: 50% 20%; }
+    .content-section--about .about-portrait img,
+    .content-section--about figure img { object-position: 50% 20%; }
 
     .service-item { grid-template-columns: 2.2rem 1fr; gap: 0.7rem; padding: calc(var(--g) * 1.1) 0; }
     .project-row { grid-template-columns: 2.2rem 1fr auto; gap: 0.7rem; padding: calc(var(--g) * 1.15) 0; }
