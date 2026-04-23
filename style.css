@@ -283,6 +283,8 @@ header {
 .about-portrait {
     grid-column: 7 / 10;
     align-self: start;
+    justify-self: end;
+    width: min(100%, 22rem);
     margin: 0;
     aspect-ratio: 4 / 5;
     border: 1px solid var(--rule);
@@ -1006,6 +1008,7 @@ footer {
     .content-section--about .content-section__body { grid-column: 3 / 8; }
     .content-section--about .about-portrait,
     .content-section--about .content-section__aside { grid-column: 8 / 13; }
+    .content-section--about .about-portrait { justify-self: start; width: min(100%, 24rem); }
     .content-section--about .content-section__aside { margin-top: var(--g); }
 
     .gallery-trigger { grid-template-columns: repeat(4, 1fr); }
@@ -1103,6 +1106,8 @@ footer {
     .content-section--about .about-portrait {
         grid-column: 1 / -1;
         order: 1;
+        justify-self: stretch;
+        width: 100%;
         margin: calc(var(--g) * 0.45) calc(var(--g) * -0.25) var(--g);
         aspect-ratio: 1 / 1.08;
         border-left: none;
